@@ -1,0 +1,41 @@
+<nav
+  class="container mx-auto px-4 py-4 sticky inset-x-0 top-8 h-20 z-50 flex items-center justify-between"
+>
+  <div class="brand">
+    <a [routerLink]="['/']" class="text-primary text-3xl">Jimmy</a>
+  </div>
+  <ul class="flex gap-10">
+    <li>
+      <a
+        [routerLink]="['/']"
+        class="text-white/50 text-sm cursor-pointer"
+        routerLinkActive="text-white"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a
+        [routerLink]="['/projects']"
+        class="text-white/50 text-sm cursor-pointer"
+        routerLinkActive="text-white"
+        >Projects</a
+      >
+    </li>
+    <li>
+      <a
+        [routerLink]="['/about']"
+        class="text-white/50 text-sm cursor-pointer"
+        routerLinkActive="text-white"
+        >About</a
+      >
+    </li>
+    <li>
+      <a
+        [routerLink]="['/contact']"
+        class="text-white/80 px-8 py-4 rounded-full border-2 border-white/30 text-sm cursor-pointer hover:bg-white/20 duration-200 transition-colors"
+        routerLinkActive="text-white"
+        >Contact</a
+      >
+    </li>
+  </ul>
+</nav>
